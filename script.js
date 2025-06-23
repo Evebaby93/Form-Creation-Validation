@@ -36,7 +36,7 @@ if(isValid)
   feedBackDiv.style.display = "block"
   feedbackDiv.textContent = "Registration successful!"
 }
-else {
+if(!isValid)  {
 feedBackDiv.style.display = "block"
   feedBackDiv.style.display = "block"
   const err_msg = messages.join("<br>")
