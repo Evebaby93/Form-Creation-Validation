@@ -12,23 +12,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let isValid = true
 
-    const messages = ["Invalid/empty username", "Invalid/empty password", "invalid/empty email"]
+    const messages = []
 if(username.length <3)
 {
-  messages[0] = "Username name cannot be less than 3 character"
+  messages.push("Username name cannot be less than 3 character")
   isValid = false
 }
     
 if(password.length <8)
 {
-  messages[0] = "Password length must be greater than 8"
+  messages.push("Password length must be greater than 8")
   isValid = false
 }
     
 if(!email.includes("@") && !email.includes("."))
 {
   isValid = false
-  messages[2] = "Invalid email address"
+  messages.push("Invalid email address")
 }
      feedbackDiv.style.display = "block"
 if(isValid) 
