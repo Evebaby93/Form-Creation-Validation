@@ -30,13 +30,14 @@ if(!email.includes("@") && !email.includes("."))
   isValid = false
   messages[2] = "Invalid email address"
 }
-    feedBackDiv.style.display = "block"
+    
 if(isValid) 
 {
+  feedBackDiv.style.display = "block"
   feedbackDiv.textContent = "Registration successful!"
 }
 else {
-
+feedBackDiv.style.display = "block"
   feedBackDiv.style.display = "block"
   const err_msg = messages.join("<br>")
   feedbackDiv.innerHTML = err_msg
