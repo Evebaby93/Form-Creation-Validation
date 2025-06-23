@@ -15,10 +15,10 @@ try {
   users.forEach(user => {
 const li = document.createElement("li")
     li.textContent = user
-    userList.append(li)
+    userList.appendChild(li)
   })
 
-  dataContainer.append(userList)
+  dataContainer.appendChild(userList)
   
 }
 
